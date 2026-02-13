@@ -1,0 +1,16 @@
+{
+  "interests": [
+    {
+      "title": "Travel & Hiking",
+      "description": "Exploring mountains and discovering new trails around the world. Nature is where I find inspiration and clarity.",
+      "imageDirectory": "interests"
+    },
+    {
+      "title": "Music Production",
+      "description": "Creating electronic music and experimenting with sound design in my spare time.",
+      "soundcloudTracks": [
+        "https://soundcloud.com/jonas-mantey/wie-alles-begann?in=jonas-mantey/sets/2012-2015"
+      ]
+    }
+  ]
+}

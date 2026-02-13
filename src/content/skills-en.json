@@ -1,0 +1,32 @@
+{
+  "Cloud Platforms": [
+    { "name": "AWS", "proficiency": "expert" },
+    { "name": "Azure", "proficiency": "advanced" },
+    { "name": "Google Cloud Platform", "proficiency": "intermediate" }
+  ],
+  "Container Orchestration": [
+    { "name": "Kubernetes", "proficiency": "expert" },
+    { "name": "Docker", "proficiency": "expert" },
+    { "name": "Helm", "proficiency": "advanced" }
+  ],
+  "Infrastructure as Code": [
+    { "name": "Terraform", "proficiency": "expert" },
+    { "name": "CloudFormation", "proficiency": "advanced" },
+    { "name": "Ansible", "proficiency": "intermediate" }
+  ],
+  "CI/CD": [
+    { "name": "GitHub Actions", "proficiency": "expert" },
+    { "name": "GitLab CI", "proficiency": "advanced" },
+    { "name": "Jenkins", "proficiency": "intermediate" }
+  ],
+  "Monitoring & Observability": [
+    { "name": "Prometheus", "proficiency": "advanced" },
+    { "name": "Grafana", "proficiency": "advanced" },
+    { "name": "ELK Stack", "proficiency": "intermediate" }
+  ],
+  "Programming Languages": [
+    { "name": "Python", "proficiency": "advanced" },
+    { "name": "Bash", "proficiency": "expert" },
+    { "name": "Go", "proficiency": "intermediate" }
+  ]
+}

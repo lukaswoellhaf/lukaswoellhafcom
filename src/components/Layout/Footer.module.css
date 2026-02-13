@@ -1,0 +1,24 @@
+.footer {
+  max-width: var(--max-width);
+  margin: var(--spacing-2xl) auto var(--spacing-large);
+  padding: 0 var(--spacing-medium);
+}
+
+.contact {
+  margin-bottom: var(--spacing-xlarge);
+}
+
+.copyright {
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+  margin: 0;
+  padding-top: var(--spacing-xlarge);
+  text-align: left;
+  font-family: var(--font-mono);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: var(--spacing-large) var(--spacing-medium) var(--spacing-medium);
+  }
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "cert-001",
+    "name": "AWS Certified Solutions Architect - Professional",
+    "issuingOrganization": "Amazon Web Services",
+    "issueDate": "2022-06",
+    "expirationDate": "2025-06",
+    "credentialId": "AWS-PSA-12345",
+    "credentialUrl": "https://aws.amazon.com/verification"
+  },
+  {
+    "id": "cert-002",
+    "name": "Certified Kubernetes Administrator (CKA)",
+    "issuingOrganization": "Cloud Native Computing Foundation",
+    "issueDate": "2023-01",
+    "expirationDate": "2026-01",
+    "credentialId": "CKA-67890",
+    "credentialUrl": "https://training.linuxfoundation.org/certification/verify/"
+  }
+]

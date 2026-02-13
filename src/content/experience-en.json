@@ -1,0 +1,30 @@
+[
+  {
+    "id": "exp-001",
+    "company": "Acme Cloud Solutions",
+    "jobTitle": "Senior DevOps Engineer",
+    "startDate": "2021-03",
+    "endDate": "Present",
+    "location": "Remote",
+    "achievements": [
+      "Reduced deployment time by 70% through Kubernetes migration and CI/CD optimization",
+      "Implemented Infrastructure as Code using Terraform, managing 50+ AWS resources",
+      "Led monitoring and observability initiative with Prometheus, Grafana, and ELK stack",
+      "Mentored team of 3 junior engineers on DevOps best practices"
+    ]
+  },
+  {
+    "id": "exp-002",
+    "company": "TechStart GmbH",
+    "jobTitle": "DevOps Engineer",
+    "startDate": "2018-06",
+    "endDate": "2021-02",
+    "location": "Berlin, Germany",
+    "achievements": [
+      "Built and maintained CI/CD pipelines using GitLab CI and GitHub Actions",
+      "Migrated legacy applications to containerized environments with Docker",
+      "Automated infrastructure provisioning reducing manual work by 80%",
+      "Implemented automated backup and disaster recovery procedures"
+    ]
+  }
+]

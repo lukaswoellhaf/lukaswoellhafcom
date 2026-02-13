@@ -1,0 +1,23 @@
+{
+  "fullName": "Lukas Wöllhaf",
+  "professionalTitle": "DevOps/Cloud Ingenieur",
+  "specialization": "Spezialisiert auf Cloud-Infrastruktur-Automatisierung, Container-Orchestrierung und CI/CD-Pipeline-Optimierung. Erfahrung mit AWS, Azure, Kubernetes und Terraform.",
+  "location": "Stuttgart, Deutschland",
+  "contactMethods": [
+    {
+      "type": "email",
+      "label": "E-Mail",
+      "value": "contact@lukaswoellhaf.com"
+    },
+    {
+      "type": "linkedin",
+      "label": "LinkedIn",
+      "value": "https://linkedin.com/in/lukaswoellhaf"
+    },
+    {
+      "type": "github",
+      "label": "GitHub",
+      "value": "https://github.com/lukaswoellhaf"
+    }
+  ]
+}

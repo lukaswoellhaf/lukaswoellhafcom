@@ -1,0 +1,16 @@
+{
+  "interests": [
+    {
+      "title": "Reisen & Wandern",
+      "description": "Berge erkunden und neue Wanderwege rund um die Welt entdecken. In der Natur finde ich Inspiration und Klarheit.",
+      "imageDirectory": "interests"
+    },
+    {
+      "title": "Musikproduktion",
+      "description": "Elektronische Musik erstellen und in meiner Freizeit mit Sound-Design experimentieren.",
+      "soundcloudTracks": [
+        "https://soundcloud.com/jonas-mantey/wie-alles-begann?in=jonas-mantey/sets/2012-2015"
+      ]
+    }
+  ]
+}

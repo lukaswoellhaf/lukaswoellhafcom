@@ -1,0 +1,35 @@
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto var(--spacing-2xl);
+  padding: var(--spacing-xlarge) var(--spacing-medium) 0;
+}
+
+.title {
+  font-size: var(--text-2xl);
+  font-weight: 500;
+  margin: 0 0 var(--spacing-xlarge) 0;
+  padding-bottom: var(--spacing-small);
+  border-bottom: 1px solid var(--color-border);
+  letter-spacing: -0.02em;
+}
+
+.grid {
+  display: grid;
+  gap: 0;
+}
+
+.empty {
+  color: var(--color-muted);
+  text-align: center;
+  padding: var(--spacing-xlarge);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: var(--spacing-medium);
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+}

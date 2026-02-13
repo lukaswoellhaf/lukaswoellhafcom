@@ -1,0 +1,107 @@
+.card {
+  padding: var(--spacing-large);
+  margin-bottom: var(--spacing-large);
+  border: 1px solid var(--color-border);
+  transition: border-color 0.2s ease;
+}
+
+.card:hover {
+  border-color: var(--color-text);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-small);
+  gap: var(--spacing-medium);
+}
+
+.title {
+  margin: 0;
+  font-size: var(--text-xl);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.title a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.title a:hover {
+  text-decoration: underline;
+}
+
+.featuredBadge {
+  padding: var(--spacing-xs) var(--spacing-small);
+  background-color: var(--color-text);
+  color: var(--color-background);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.category {
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+  margin-bottom: var(--spacing-xs);
+}
+
+.date {
+  display: block;
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+  margin-bottom: var(--spacing-medium);
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-small);
+  margin-bottom: var(--spacing-medium);
+}
+
+.tech {
+  padding: var(--spacing-xs) var(--spacing-small);
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  font-size: var(--text-sm);
+  font-family: var(--font-mono);
+  transition: all var(--transition-fast);
+}
+
+.tech:hover {
+  border-color: var(--color-text);
+  background-color: var(--color-text);
+  color: var(--color-background);
+}
+
+.readMore {
+  display: inline-block;
+  color: var(--color-text);
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+}
+
+.readMore:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: var(--spacing-medium);
+  }
+
+  .header {
+    flex-direction: column;
+    gap: var(--spacing-small);
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+}
