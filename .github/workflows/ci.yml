@@ -61,6 +61,7 @@ jobs:
       
       - name: Extract metadata for Docker
         id: meta
+        if: github.event_name == 'push'
         uses: docker/metadata-action@v5
         with:
           images: ghcr.io/${{ github.repository }}
