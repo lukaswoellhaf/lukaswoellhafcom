@@ -11,20 +11,29 @@ Personal portfolio website with minimal design and internationalization (EN/DE) 
 
 ## Setup
 
+### Run Application
+
 ```bash
 npm install
 npm run dev
 ```
 
+### Pre-Commit Hooks
+
+```bash
+pre-commit install              # Install necessary pre-commit hooks
+pre-commit run --all-files      # Validate all pre-commits are active
+```
+
 ## Key Commands
 
 ```bash
-npm run dev              # Start dev server
-npm run build            # Build for production
-npm run lint             # Run ESLint
-npm run type-check       # Run TypeScript compiler
-npm test                 # Run tests
-npm run validate-content # Validate content JSON files
+npm run dev                     # Start dev server
+npm run build                   # Build for production
+npm run lint                    # Run ESLint
+npm run type-check              # Run TypeScript compiler
+npm test                        # Run tests
+npm run validate-content        # Validate content JSON files
 ```
 
 ## Project Structure
