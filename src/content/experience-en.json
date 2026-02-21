@@ -1,30 +1,62 @@
 [
   {
     "id": "exp-001",
-    "company": "Acme Cloud Solutions",
-    "jobTitle": "Senior DevOps Engineer",
-    "startDate": "2021-03",
+    "company": "SprintEins GmbH",
+    "jobTitle": "DevOps/Cloud Engineer",
+    "startDate": "2024-10",
     "endDate": "Present",
-    "location": "Remote",
+    "location": "Stuttgart, Baden-Württemberg, Germany",
     "achievements": [
-      "Reduced deployment time by 70% through Kubernetes migration and CI/CD optimization",
-      "Implemented Infrastructure as Code using Terraform, managing 50+ AWS resources",
-      "Led monitoring and observability initiative with Prometheus, Grafana, and ELK stack",
-      "Mentored team of 3 junior engineers on DevOps best practices"
+      "Implementation of CI/CD pipelines and deployment automation on Azure, AWS and OpenShift using GitHub Actions, ArgoCD and Terraform",
+      "Development of Infrastructure as Code solutions using Terraform and Ansible",
+      "Consulting and mentoring in DevOps best practices and cloud architectures"
     ]
   },
   {
     "id": "exp-002",
-    "company": "TechStart GmbH",
-    "jobTitle": "DevOps Engineer",
-    "startDate": "2018-06",
-    "endDate": "2021-02",
-    "location": "Berlin, Germany",
+    "company": "SprintEins GmbH",
+    "jobTitle": "Software Developer/DevOps Engineer",
+    "startDate": "2023-03",
+    "endDate": "2024-09",
+    "location": "Stuttgart, Baden-Württemberg, Germany",
     "achievements": [
-      "Built and maintained CI/CD pipelines using GitLab CI and GitHub Actions",
-      "Migrated legacy applications to containerized environments with Docker",
-      "Automated infrastructure provisioning reducing manual work by 80%",
-      "Implemented automated backup and disaster recovery procedures"
+      "Independent planning and execution of project migration from on-premise to AWS Cloud using GitOps (ArgoCD) and Kustomize",
+      "Setup of monitoring and alerting with Grafana/Prometheus and optimization of CI/CD pipelines in GitHub Actions",
+      "Development of a web application with focus on backend using Golang, PostgreSQL and Kafka, complemented by frontend with TypeScript/React"
+    ]
+  },
+  {
+    "id": "exp-003",
+    "company": "SprintEins GmbH",
+    "jobTitle": "Bachelor Thesis",
+    "startDate": "2022-10",
+    "endDate": "2023-01",
+    "location": "Stuttgart, Baden-Württemberg, Germany",
+    "achievements": [
+      "Analysis, selection and deployment of fuzzing frameworks with integration into existing CI/CD pipelines"
+    ]
+  },
+  {
+    "id": "exp-004",
+    "company": "Bosch eBike Systems",
+    "jobTitle": "Working Student in Digital Business",
+    "startDate": "2022-03",
+    "endDate": "2022-09",
+    "location": "Kusterdingen, Baden-Württemberg, Germany",
+    "achievements": [
+      "Optimization and automation of IT onboarding processes",
+      "E2E testing of eBike applications for quality assurance"
+    ]
+  },
+  {
+    "id": "exp-005",
+    "company": "Bosch eBike Systems",
+    "jobTitle": "Mandatory Internship in Digital Business",
+    "startDate": "2021-09",
+    "endDate": "2022-02",
+    "location": "Kusterdingen, Baden-Württemberg, Germany",
+    "achievements": [
+      "E2E testing of eBike applications for quality assurance"
     ]
   }
 ]

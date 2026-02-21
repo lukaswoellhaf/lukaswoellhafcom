@@ -1,32 +1,34 @@
 {
   "Cloud-Plattformen": [
     { "name": "AWS", "proficiency": "expert" },
-    { "name": "Azure", "proficiency": "advanced" },
-    { "name": "Google Cloud Platform", "proficiency": "intermediate" }
+    { "name": "Azure", "proficiency": "expert" },
+    { "name": "OpenShift", "proficiency": "advanced" }
   ],
   "Container-Orchestrierung": [
     { "name": "Kubernetes", "proficiency": "expert" },
     { "name": "Docker", "proficiency": "expert" },
-    { "name": "Helm", "proficiency": "advanced" }
+    { "name": "Helm", "proficiency": "advanced" },
+    { "name": "Kustomize", "proficiency": "advanced" }
   ],
   "Infrastructure as Code": [
     { "name": "Terraform", "proficiency": "expert" },
-    { "name": "CloudFormation", "proficiency": "advanced" },
-    { "name": "Ansible", "proficiency": "intermediate" }
+    { "name": "Ansible", "proficiency": "advanced" }
   ],
-  "CI/CD": [
+  "CI/CD & GitOps": [
     { "name": "GitHub Actions", "proficiency": "expert" },
-    { "name": "GitLab CI", "proficiency": "advanced" },
-    { "name": "Jenkins", "proficiency": "intermediate" }
+    { "name": "ArgoCD", "proficiency": "expert" }
   ],
   "Monitoring & Observability": [
     { "name": "Prometheus", "proficiency": "advanced" },
-    { "name": "Grafana", "proficiency": "advanced" },
-    { "name": "ELK Stack", "proficiency": "intermediate" }
+    { "name": "Grafana", "proficiency": "advanced" }
   ],
   "Programmiersprachen": [
-    { "name": "Python", "proficiency": "advanced" },
-    { "name": "Bash", "proficiency": "expert" },
-    { "name": "Go", "proficiency": "intermediate" }
+    { "name": "Go", "proficiency": "advanced" },
+    { "name": "Bash", "proficiency": "advanced" },
+    { "name": "TypeScript", "proficiency": "advanced" }
+  ],
+  "Datenbanken & Messaging": [
+    { "name": "PostgreSQL", "proficiency": "advanced" },
+    { "name": "Kafka", "proficiency": "intermediate" }
   ]
 }

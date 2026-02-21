@@ -3,6 +3,7 @@ import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import { BrowserRouter, useNavigate, useLocation } from 'react-router-dom';
 import { LanguageProvider } from '../../src/contexts/LanguageContext';
 import { Header } from '../../src/components/Layout/Header';
+import { featureFlags } from '../../src/config/features';
 
 // Mock react-router-dom hooks
 vi.mock('react-router-dom', async () => {
@@ -44,7 +45,7 @@ beforeEach(() => {
 });
 
 describe('Header Navigation Logic', () => {
-  it('should set active section to "projects" when on project detail page', () => {
+  it.skipIf(!featureFlags.sections.projects)('should set active section to "projects" when on project detail page', () => {
     (useLocation as ReturnType<typeof vi.fn>).mockReturnValue({ 
       pathname: '/projects/my-project' 
     });
@@ -151,7 +152,7 @@ describe('Header Navigation Logic', () => {
     }
   });
 
-  it('should toggle active section based on scroll position', async () => {
+  it.skipIf(!featureFlags.sections.personal)('should toggle active section based on scroll position', async () => {
     (useLocation as ReturnType<typeof vi.fn>).mockReturnValue({ pathname: '/' });
 
     // Create mock sections
