@@ -1,30 +1,62 @@
 [
   {
     "id": "exp-001",
-    "company": "Acme Cloud Solutions",
-    "jobTitle": "Senior DevOps Ingenieur",
-    "startDate": "2021-03",
+    "company": "SprintEins GmbH",
+    "jobTitle": "DevOps/Cloud Ingenieur",
+    "startDate": "2024-10",
     "endDate": "Heute",
-    "location": "Remote",
+    "location": "Stuttgart, Baden-Württemberg, Deutschland",
     "achievements": [
-      "Reduzierung der Bereitstellungszeit um 70% durch Kubernetes-Migration und CI/CD-Optimierung",
-      "Implementierung von Infrastructure as Code mit Terraform, Verwaltung von 50+ AWS-Ressourcen",
-      "Leitung der Monitoring- und Observability-Initiative mit Prometheus, Grafana und ELK Stack",
-      "Mentoring eines Teams von 3 Junior-Ingenieuren in DevOps Best Practices"
+      "Implementierung von CI/CD-Pipelines und Deployment-Automatisierung auf Azure, AWS und OpenShift mit GitHub Actions, ArgoCD und Terraform",
+      "Entwicklung von Infrastructure as Code Lösungen mit Terraform und Ansible",
+      "Beratung und Mentoring in DevOps Best Practices und Cloud-Architekturen"
     ]
   },
   {
     "id": "exp-002",
-    "company": "TechStart GmbH",
-    "jobTitle": "DevOps Ingenieur",
-    "startDate": "2018-06",
-    "endDate": "2021-02",
-    "location": "Berlin, Deutschland",
+    "company": "SprintEins GmbH",
+    "jobTitle": "Softwareentwickler/DevOps Ingenieur",
+    "startDate": "2023-03",
+    "endDate": "2024-09",
+    "location": "Stuttgart, Baden-Württemberg, Deutschland",
     "achievements": [
-      "Aufbau und Wartung von CI/CD-Pipelines mit GitLab CI und GitHub Actions",
-      "Migration von Legacy-Anwendungen in containerisierte Umgebungen mit Docker",
-      "Automatisierung der Infrastruktur-Bereitstellung mit 80% Reduzierung manueller Arbeit",
-      "Implementierung automatisierter Backup- und Disaster-Recovery-Verfahren"
+      "Eigenverantwortliche Planung und Durchführung der Migration eines Projekts von On-Premise zu AWS Cloud mit Einsatz von GitOps (ArgoCD) und Kustomize",
+      "Aufbau eines Monitoring- und Alerting-Setups mit Grafana/Prometheus und Optimierung von CI/CD-Pipelines in GitHub Actions",
+      "Entwicklung einer Webanwendung mit Fokus auf Backend mit Golang, PostgreSQL und Kafka, ergänzt durch Frontend mit TypeScript/React"
+    ]
+  },
+  {
+    "id": "exp-003",
+    "company": "SprintEins GmbH",
+    "jobTitle": "Bachelorarbeit",
+    "startDate": "2022-10",
+    "endDate": "2023-01",
+    "location": "Stuttgart, Baden-Württemberg, Deutschland",
+    "achievements": [
+      "Analyse, Auswahl und Einsatz von Fuzzing-Frameworks mit Integration in bestehende CI/CD-Pipelines"
+    ]
+  },
+  {
+    "id": "exp-004",
+    "company": "Bosch eBike Systems",
+    "jobTitle": "Werkstudent im Bereich Digital Business",
+    "startDate": "2022-03",
+    "endDate": "2022-09",
+    "location": "Kusterdingen, Baden-Württemberg, Deutschland",
+    "achievements": [
+      "Optimierung und Automatisierung von IT-Onboarding-Prozessen",
+      "E2E Testing der eBike-Applikationen zur Qualitätssicherung"
+    ]
+  },
+  {
+    "id": "exp-005",
+    "company": "Bosch eBike Systems",
+    "jobTitle": "Pflichtpraktikant im Bereich Digital Business",
+    "startDate": "2021-09",
+    "endDate": "2022-02",
+    "location": "Kusterdingen, Baden-Württemberg, Deutschland",
+    "achievements": [
+      "E2E Testing der eBike-Applikationen zur Qualitätssicherung"
     ]
   }
 ]
