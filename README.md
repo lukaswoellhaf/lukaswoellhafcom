@@ -1,4 +1,4 @@
-# lukaswoellhafcom
+# lukaswoellhafcom 👨‍💻
 
 Personal portfolio website with minimal design and internationalization (EN/DE) support.
 
