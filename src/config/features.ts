@@ -28,8 +28,8 @@ export const featureFlags: FeatureFlags = {
     skills: true,
     education: true,
     certifications: false,
-    personal: false,
-    projects: false,
+    personal: true,
+    projects: true,
     contact: true,
   },
   routes: {

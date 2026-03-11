@@ -31,14 +31,16 @@ export const Footer: React.FC<FooterProps> = ({ showContact = false }) => {
 
   return (
     <footer className={styles.footer} id="contact">
-      {showContact && profile?.contactMethods && profile.contactMethods.length > 0 && (
-        <div className={styles.contact}>
-          <ContactInfo contactMethods={profile.contactMethods} title={t('contact.title')} />
-        </div>
-      )}
-      <p className={styles.copyright}>
-        © {currentYear} Lukas Wöllhaf. {t('footer.copyright')}.
-      </p>
+      <div className={styles.container}>
+        {showContact && profile?.contactMethods && profile.contactMethods.length > 0 && (
+          <div className={styles.contact}>
+            <ContactInfo contactMethods={profile.contactMethods} title={t('contact.title')} />
+          </div>
+        )}
+        <p className={styles.copyright}>
+          © {currentYear} Lukas Wöllhaf. {t('footer.copyright')}.
+        </p>
+      </div>
     </footer>
   );
 };

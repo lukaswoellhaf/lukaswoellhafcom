@@ -2,7 +2,7 @@
   position: relative;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: var(--spacing-xlarge) var(--spacing-medium) var(--spacing-large);
+  padding: var(--spacing-xlarge) var(--spacing-medium) var(--spacing-2xl);
 }
 
 .profileImage {
