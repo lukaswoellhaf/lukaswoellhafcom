@@ -15,6 +15,7 @@ export function useInView(options?: IntersectionObserverInit): [RefObject<HTMLEl
     );
     observer.observe(el);
     return () => observer.disconnect();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return [ref, inView];
