@@ -56,12 +56,12 @@ export const ProfilePage: React.FC = () => {
       try {
         const [profile, experience, skills, education, certifications, projects, interests] = await Promise.all([
           loadProfile(language),
-          loadExperience(language),
-          loadSkills(language),
-          loadEducation(language),
-          loadCertifications(language),
-          loadProjects({ language }),
-          loadInterests(language),
+          featureFlags.sections.workExperience ? loadExperience(language) : Promise.resolve([]),
+          featureFlags.sections.skills ? loadSkills(language) : Promise.resolve(null),
+          featureFlags.sections.education ? loadEducation(language) : Promise.resolve([]),
+          featureFlags.sections.certifications ? loadCertifications(language) : Promise.resolve([]),
+          featureFlags.sections.projects ? loadProjects({ language }) : Promise.resolve([]),
+          featureFlags.sections.personal ? loadInterests(language) : Promise.resolve({ interests: [] }),
         ]);
 
         setData({

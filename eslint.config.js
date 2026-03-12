@@ -37,6 +37,11 @@ export default [
         console: 'readonly',
         setTimeout: 'readonly',
         clearTimeout: 'readonly',
+        setInterval: 'readonly',
+        clearInterval: 'readonly',
+        HTMLElement: 'readonly',
+        IntersectionObserver: 'readonly',
+        IntersectionObserverInit: 'readonly',
         // JSX
         JSX: 'readonly',
       },

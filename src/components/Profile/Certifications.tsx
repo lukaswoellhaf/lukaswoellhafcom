@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../../contexts/LanguageContext';
+import { useInView } from '../../hooks/useInView';
 import type { Certification } from '../../types/profile.types';
 import styles from './Certifications.module.css';
 
@@ -9,8 +10,9 @@ interface CertificationsProps {
 
 export const Certifications: React.FC<CertificationsProps> = ({ certifications }) => {
   const { t } = useLanguage();
+  const [ref, inView] = useInView();
   return (
-    <section className={styles.section}>
+    <section ref={ref as React.RefObject<HTMLElement>} className={`${styles.section}${inView ? ` ${styles.visible}` : ''}`}>
       <h2 className={styles.heading}>{t('certifications.title')}</h2>
       {certifications.map((cert) => (
         <article key={cert.id} className={styles.entry}>
