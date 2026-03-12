@@ -9,11 +9,14 @@ export const Header: React.FC = () => {
   const navigate = useNavigate();
   const { language, setLanguage, t } = useLanguage();
   const [activeSection, setActiveSection] = useState('about');
+  const [menuOpen, setMenuOpen] = useState(false);
   const [isDark, setIsDark] = useState(() => {
     const saved = localStorage.getItem('theme');
     if (saved) return saved === 'dark';
     return window.matchMedia('(prefers-color-scheme: dark)').matches;
   });
+  const [iconKey, setIconKey] = useState(0);
+  const [langKey, setLangKey] = useState(0);
   
   // Only track scroll on home page
   const isHomePage = location.pathname === '/';
@@ -37,10 +40,12 @@ export const Header: React.FC = () => {
 
   const toggleTheme = () => {
     setIsDark(!isDark);
+    setIconKey((k) => k + 1);
   };
 
   const toggleLanguage = () => {
     setLanguage(language === 'en' ? 'de' : 'en');
+    setLangKey((k) => k + 1);
   };
 
   useEffect(() => {
@@ -73,6 +78,7 @@ export const Header: React.FC = () => {
   }, [isHomePage]);
 
   const scrollToSection = (sectionId: string) => {
+    setMenuOpen(false);
     if (!isHomePage) {
       // Navigate to home page first, then scroll after navigation
       navigate('/');
@@ -103,7 +109,17 @@ export const Header: React.FC = () => {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <nav className={styles.nav} aria-label="Main navigation">
+        <button
+          className={styles.hamburger}
+          onClick={() => setMenuOpen((o) => !o)}
+          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={menuOpen}
+        >
+          <span className={`${styles.hamburgerLine} ${menuOpen ? styles.hamburgerLineTopOpen : ''}`} />
+          <span className={`${styles.hamburgerLine} ${menuOpen ? styles.hamburgerLineMiddleOpen : ''}`} />
+          <span className={`${styles.hamburgerLine} ${menuOpen ? styles.hamburgerLineBottomOpen : ''}`} />
+        </button>
+        <nav className={`${styles.nav} ${menuOpen ? styles.navOpen : ''}`} aria-label="Main navigation">
           {featureFlags.sections.about && (
             <button 
               onClick={() => scrollToSection('about')}
@@ -143,14 +159,18 @@ export const Header: React.FC = () => {
             className={styles.languageToggle}
             aria-label="Toggle language"
           >
-            {language === 'en' ? 'DE' : 'EN'}
+            <span key={langKey} className={styles.themeIcon}>
+              {language === 'en' ? 'DE' : 'EN'}
+            </span>
           </button>
           <button 
             onClick={toggleTheme}
             className={styles.themeToggle}
             aria-label="Toggle theme"
           >
-            {isDark ? '☀' : '☾'}
+            <span key={iconKey} className={styles.themeIcon}>
+              {isDark ? '☀' : '☾'}
+            </span>
           </button>
         </div>
       </div>

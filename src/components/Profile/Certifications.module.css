@@ -2,6 +2,14 @@
   max-width: var(--max-width);
   margin: 0 auto var(--spacing-2xl);
   padding: 0 var(--spacing-medium);
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .heading {
@@ -11,6 +19,12 @@
   padding-bottom: var(--spacing-small);
   border-bottom: 1px solid var(--color-border);
   letter-spacing: -0.02em;
+  transition: transform var(--transition-base);
+  transform-origin: left;
+}
+
+.heading:hover {
+  transform: scale(1.04);
 }
 
 .entry {

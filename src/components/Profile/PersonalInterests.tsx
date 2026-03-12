@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../../contexts/LanguageContext';
+import { useInView } from '../../hooks/useInView';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
 import styles from './PersonalInterests.module.css';
@@ -17,6 +18,7 @@ interface PersonalInterestsProps {
 
 export const PersonalInterests: React.FC<PersonalInterestsProps> = ({ interests }) => {
   const { t } = useLanguage();
+  const [ref, inView] = useInView();
   const [interestImages, setInterestImages] = useState<Record<string, string[]>>({});
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
@@ -57,7 +59,7 @@ export const PersonalInterests: React.FC<PersonalInterestsProps> = ({ interests 
   };
   
   return (
-    <section className={styles.section}>
+    <section ref={ref as React.RefObject<HTMLElement>} className={`${styles.section}${inView ? ` ${styles.visible}` : ''}`}>
       <h2 className={styles.heading}>{t('personalInterests.title')}</h2>
       
       <div className={styles.interests}>

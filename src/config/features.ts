@@ -16,9 +16,6 @@ export interface FeatureFlags {
     projects: boolean;
     contact: boolean;
   };
-  routes: {
-    projectDetail: boolean;
-  };
 }
 
 export const featureFlags: FeatureFlags = {
@@ -29,10 +26,7 @@ export const featureFlags: FeatureFlags = {
     education: true,
     certifications: false,
     personal: true,
-    projects: true,
+    projects: false,
     contact: true,
-  },
-  routes: {
-    projectDetail: false,
   },
 };

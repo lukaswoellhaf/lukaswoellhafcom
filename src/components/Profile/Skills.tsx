@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../../contexts/LanguageContext';
+import { useInView } from '../../hooks/useInView';
 import type { SkillsCategory } from '../../types/profile.types';
 import styles from './Skills.module.css';
 
@@ -9,8 +10,10 @@ interface SkillsProps {
 
 export const Skills: React.FC<SkillsProps> = ({ skills }) => {
   const { t } = useLanguage();
+  const [ref, inView] = useInView();
+
   return (
-    <section className={styles.section}>
+    <section ref={ref as React.RefObject<HTMLElement>} className={`${styles.section}${inView ? ` ${styles.visible}` : ''}`}>
       <h2 className={styles.heading}>{t('skills.title')}</h2>
       {Object.entries(skills).map(([category, skillList]) => (
         <div key={category} className={styles.category}>

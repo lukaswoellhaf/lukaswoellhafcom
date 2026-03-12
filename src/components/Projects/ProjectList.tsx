@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../../contexts/LanguageContext';
+import { useInView } from '../../hooks/useInView';
 import type { Project } from '../../types/project.types';
 import { ProjectCard } from './ProjectCard';
 import styles from './ProjectList.module.css';
@@ -16,10 +17,11 @@ export const ProjectList: React.FC<ProjectListProps> = ({
   emptyMessage,
 }) => {
   const { t } = useLanguage();
+  const [ref, inView] = useInView();
   const displayTitle = title || t('projects.title');
   const displayEmptyMessage = emptyMessage || t('projects.noProjects');
   return (
-    <section className={styles.container}>
+    <section ref={ref as React.RefObject<HTMLElement>} className={`${styles.container}${inView ? ` ${styles.visible}` : ''}`}>
       <h2 className={styles.title}>{displayTitle}</h2>
 
       {projects.length === 0 ? (
