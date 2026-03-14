@@ -36,6 +36,7 @@ export interface EducationRecord {
   institution: string;
   degree: string;
   field?: string;
+  startDate?: string;
   graduationDate: string;
   location?: string;
 }
