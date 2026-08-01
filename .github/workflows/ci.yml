@@ -48,7 +48,7 @@ jobs:
           exit-code: '0'  # Do not fail the build on vulnerabilities, just report them
       
       - name: Upload Trivy filesystem results to GitHub Security
-        uses: github/codeql-action/upload-sarif@v4
+        uses: github/codeql-action/upload-sarif@v4.37.3
         if: always()
         with:
           sarif_file: 'trivy-filesystem-results.sarif'
@@ -91,7 +91,7 @@ jobs:
           exit-code: '0'  # Do not fail the build on vulnerabilities, just report them
       
       - name: Upload Trivy results to GitHub Security
-        uses: github/codeql-action/upload-sarif@v4
+        uses: github/codeql-action/upload-sarif@v4.37.3
         if: always()
         with:
           sarif_file: 'trivy-image-results.sarif'
